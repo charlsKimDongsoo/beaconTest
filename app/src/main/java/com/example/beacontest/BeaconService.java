@@ -69,7 +69,6 @@ public class BeaconService {
         scanFilters = new Vector<>();
         ScanFilter.Builder scanFilter = new ScanFilter.Builder();
         //scanFilter.setDeviceAddress("DC:0D:D6:F9:2D:44");
-       // scanFilter.setDeviceName("");
         ScanFilter scan = scanFilter.build();
         scanFilters.add(scan);
         mBluetoothLeScanner.startScan(scanFilters, scanSettings, mScanCallback);
@@ -120,16 +119,16 @@ public class BeaconService {
         public void onBatchScanResults(List<ScanResult> results) {
             super.onBatchScanResults(results);
             List<ScanResult> temp = new ArrayList<ScanResult>();
-
-            for (int i = 0; i < results.size(); i++) {
-                if (results.get(i).getDevice().getName() != null) {
-                    temp.add(results.get(i));
-                }
-            }
-            if(temp.size() > 0) {
-                fHandler.obtainMessage(1009, temp).sendToTarget();
-                Log.d("onBatchScanResults", temp.size() + "");
-            }
+//
+//            for (int i = 0; i < results.size(); i++) {
+//                if (results.get(i).getDevice().getName() != null) {
+//                    temp.add(results.get(i));
+//                }
+//            }
+//            if(temp.size() > 0) {
+//                fHandler.obtainMessage(1009, temp).sendToTarget();
+//                Log.d("onBatchScanResults", temp.size() + "");
+//            }
 
 
         }
