@@ -68,7 +68,7 @@ public class BeaconService {
         ScanSettings scanSettings = mScanSettings.build();
         scanFilters = new Vector<>();
         ScanFilter.Builder scanFilter = new ScanFilter.Builder();
-        //scanFilter.setDeviceAddress("DC:0D:D6:F9:2D:44");
+        scanFilter.setDeviceAddress("DC:0D:D6:F9:2D:44");
        // scanFilter.setDeviceName("");
         ScanFilter scan = scanFilter.build();
         scanFilters.add(scan);
