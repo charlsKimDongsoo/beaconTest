@@ -130,7 +130,6 @@ public class BeaconService {
 //                Log.d("onBatchScanResults", temp.size() + "");
 //            }
 
-
         }
 
         @Override
