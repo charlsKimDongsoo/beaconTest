@@ -16,7 +16,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="중"
+        android:text="중지"
         android:id="@+id/stop"
         android:onClick="stop_scan"/>
     <ListView
